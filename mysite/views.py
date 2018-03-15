@@ -10,6 +10,12 @@ def hello(request):
       </head>
       <body>
       <h1>MY PERSONAL BLOG <h1> 
+
+       <div>
+       <p>
+       Hello all , this is the place where I will share my experiences .  </p>
+
+       </div>
        
 
       </body>
