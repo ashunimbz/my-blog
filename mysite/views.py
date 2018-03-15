@@ -23,7 +23,8 @@ def hello(request):
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
-  .margin1 {margin-left: 17px ;}
+  .margin1 {margin-left: 17px ;
+            margin_bottom : 17px ; }
   .bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
@@ -90,6 +91,7 @@ def hello(request):
     <a href="https://www.linkedin.com/in/ashish-nimbalkar-602371152/" class="btn btn-info btn-lg margin1" role="button">LinkedIn</a>
     <a href="https://www.quora.com/profile/Ashish-Nimbalkar-1" class="btn btn-info btn-lg margin1" role="button">Quora</a>
   <a href="https://www.facebook.com/ashish.nimbalkar.528" class="btn  btn-info btn-lg margin1" role="button">Facebook</a>
+  <a href="https://www.codechef.com/users/ashforever007" class="btn  btn-info btn-lg margin1" role="button">Codechef</a>
   </div>
 </div>
 
