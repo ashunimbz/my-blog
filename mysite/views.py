@@ -28,7 +28,7 @@ def hello(request):
 
 
  """
-       return HttpResponse(html) 
+    return HttpResponse(html) 
 
 def time(request):
 	now =  datetime.datetime.now() 
