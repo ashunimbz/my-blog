@@ -3,8 +3,7 @@ from django.shortcuts import  render
 import datetime
 
 def hello(request):
-	return render ( request ,  'Accounts/login.html')
-
+	return HttpResponse(" Hello World" ) 
 
 def time(request):
 	now =  datetime.datetime.now() 
