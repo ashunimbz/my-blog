@@ -3,7 +3,31 @@ from django.shortcuts import  render
 import datetime
 
 def hello(request):
-	return render ( request ,  'Accounts/login.html')
+	html  = """ 
+      <html> 
+      <head>
+      <title>Ashish_Nimbalkar</title>
+      </head>
+      <body>
+      <h1>MY PERSONAL BLOG <h1> 
+       
+
+      </body>
+
+
+
+     </html>
+ 
+
+
+
+
+
+
+
+
+
+ """
 
 def time(request):
 	now =  datetime.datetime.now() 
