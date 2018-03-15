@@ -21,7 +21,7 @@ from mysite.views import time , addtime
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/$' , hello) , 
+    url(r'^$' , hello) , 
     url(r'^time/$',time) , 
     url(r'^time/plus/(\d{1,2})/$' , addtime) , 
 ]
