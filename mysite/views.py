@@ -23,6 +23,7 @@ def hello(request):
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
+  .margin1 {margin-left: 17px ;}
   .bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
@@ -83,24 +84,35 @@ def hello(request):
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">ASHISH NIMBALKAR</h3>
-  
-  <h3>I'm a Programmer</h3>
+  <h3 class = "margin">I'm a Programmer</h3>
+  <div> 
+   <a href="https://github.com/ashunimbz" class="btn btn-info btn-lg" role="button">Github</a>
+    <a href="https://www.linkedin.com/in/ashish-nimbalkar-602371152/" class="btn btn-info btn-lg margin1" role="button">LinkedIn</a>
+    <a href="https://www.quora.com/profile/Ashish-Nimbalkar-1" class="btn btn-info btn-lg margin1" role="button">Quora</a>
+  <a href="https://www.facebook.com/ashish.nimbalkar.528" class="btn  btn-info btn-lg margin1" role="button">Facebook</a>
+  </div>
 </div>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin"></h3>
-  <p>An optimist trying to find some meaning in life</p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
+ <div class =  "bg-1" >
+ <h2 >SKILLS</h2>
+ <div class="list-group ">
+    <a href="#" class="list-group-item list-group-item-success">C++</a>
+    <a href="#" class="list-group-item list-group-item-info">Django</a>
+    <a href="#" class="list-group-item list-group-item-success">Java </a>
+    <a href="#" class="list-group-item list-group-item-danger">Python</a>
+  </div>
+  </div>
 
 
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>OK BYE !</p> 
+  <h2>ABOUT ME </h2>
+  <div>
+  
+  <p  font-size = "20" >I am currently studying Information technology at GECA.I like to solve puzzles .I do competative programming in my free time . I am a big fan of Yuvaraj Singh ( Cricketer ) .I also closely follow football especially La-liga .Real madrid is my favorite team .I like to watch sci-fi hollywood movies. My favorite singer is Ed-sheeran ,while favorite band is Imagine Dragons.</p>
+  
+  </div> 
 </footer>
 
 </body>
