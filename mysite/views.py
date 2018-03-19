@@ -1,5 +1,6 @@
 from django.http import HttpResponse 
 from django.shortcuts import  render
+from django.views.generic import TemplateView
 import datetime
 
 def hello(request):
@@ -121,13 +122,6 @@ def hello(request):
 </html>"""
 	return HttpResponse(html) 
 
-def time(request):
-	now =  datetime.datetime.now() 
-	html  =  "<html><body>  It is now %s</html></body>"%now
-	return HttpResponse(now)
 
-def addtime(request ,  offset):
-	t  =   int(offset)
-	dt  =  datetime.datetime.now() + datetime.timedelta(hours = t)
-	html  = "<html><body> After %s it would be %s </html></body>"% (t ,  dt)
-	return HttpResponse(html)
+class second(TemplateView):
+  template_name =  'itworks.html'

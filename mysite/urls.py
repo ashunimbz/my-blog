@@ -16,12 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from mysite.views import hello
-from mysite.views import time , addtime 
+from mysite import views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'' , hello) , 
-    url(r'^time/$',time) , 
-    url(r'^time/plus/(\d{1,2})/$' , addtime) , 
+    url(r'^$' , hello) , 
+   url(r'^check/$' , views.second.as_view())  , 
 ]
