@@ -21,6 +21,6 @@ from mysite import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$' , hello) , 
+    url(r'^$' , views.hello.as_view()) , 
    url(r'^check/$' , views.second.as_view())  , 
 ]
