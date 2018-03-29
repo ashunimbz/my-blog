@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog</title> 
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/base_blog_page.css' %}">
+ 
+ 
+</head>
+<body>
+
+
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h1 class="margin">{% block heading %}{% endblock heading %}</h1>
+  <h2 class = "margin">{% block subheading %}{% endblock subheading  %}</h2>
+</div>
+
+ <div class =  "container-fluid bg-5" >
+ <h2 >{% block blogtitle %} {% endblock blogtitle %}</h2>
+ <div ><p>
+   {% block content %} {% endblock content%}
+   </p>
+  </div>
+  </div>
+
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-2 text-center">
+  <h3>  Contact Me </h3>
+  <div>
+  <p>ashu.nim15@gmail.com</p>
+  </div> 
+</footer>
+
+</body>
+</html>

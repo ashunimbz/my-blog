@@ -4,9 +4,7 @@ from django.views.generic import TemplateView
 import datetime
 
 class hello(TemplateView):
-  template_name = 'login.html'
+  template_name = 'base_page.html'
  
 
 
-class second(TemplateView):
-  template_name =  'itworks.html'

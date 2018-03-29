@@ -1,0 +1,16 @@
+{% extends 'blog_template.html' %}
+{% block heading %}
+  {{post.title|safe}}
+{% endblock heading%}
+{% block subheading %}
+  {{post.desc|safe}}
+{% endblock subheading%}
+{% block blogtitle %}{{post.title |safe}}{% endblock blogtitle%}
+{% block content %}
+ 
+    <div class="post-entry">
+    
+      <p>{{ post.text|safe }}</p>
+    </div>
+  
+{% endblock content %}

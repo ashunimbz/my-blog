@@ -1,0 +1,16 @@
+{% extends 'blog_template.html' %}
+{% block heading %}
+  WELCOME TO MY BLOG !
+{% endblock heading%}
+{% block subheading %}
+  This is the place where I share my thoughts . 
+{% endblock subheading%}
+{% block blogtitle %} MY POSTS {% endblock blogtitle %}
+{% block content %}
+  {% for post in object_list %}
+    <div class="post-entry">
+      <h2><a href="{%url 'blog:post_detail' post.pk %}">{{ post.title|safe }}</a></h2>
+      <p>{{ post.desc|safe }}</p>
+    </div>
+  {% endfor %}
+{% endblock content %}

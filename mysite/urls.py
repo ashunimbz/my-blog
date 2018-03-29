@@ -17,10 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from mysite.views import hello
 from mysite import views
+from django.conf.urls import  include 
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$' , views.hello.as_view()) , 
-   url(r'^check/$' , views.second.as_view())  , 
+   url(r'^blog/' , include('blog.urls' , namespace =  'blog' ) )   , 
 ]
