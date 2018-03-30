@@ -1,10 +1,5 @@
 {% extends 'blog_template.html' %}
-{% block heading %}
-  WELCOME TO MY BLOG !
-{% endblock heading%}
-{% block subheading %}
-  This is the place where I share my thoughts . 
-{% endblock subheading%}
+
 {% block blogtitle %} MY POSTS {% endblock blogtitle %}
 {% block content %}
   {% for post in object_list %}
