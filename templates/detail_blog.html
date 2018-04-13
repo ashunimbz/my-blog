@@ -7,8 +7,14 @@
     
       <p>{{ post.text|safe }}</p>
 
-      <p > <b>Author</b>  -  {{ post.author|safe }} </p>
-      <p> <b>Published date</b> - {{ post.created_date }} </p>
+     
     </div>
   
 {% endblock content %}
+
+{% block extras %}
+
+<p > <b>Author</b>  -  {{ post.author|safe }} </p>
+<p> <b>Published date</b> - {{ post.created_date }} </p>
+
+{% endblock extras %}
