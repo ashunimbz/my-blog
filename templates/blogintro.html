@@ -3,9 +3,11 @@
 {% block blogtitle %} MY POSTS {% endblock blogtitle %}
 {% block content %}
   {% for post in object_list %}
+    {% if post.verified %}
     <div class="post-entry">
       <h2><a href="{%url 'blog:post_detail' post.pk %}">{{ post.title|safe }}</a></h2>
       <p>{{ post.desc|safe }}</p>
     </div>
+   {% endif %}
   {% endfor %}
 {% endblock content %}

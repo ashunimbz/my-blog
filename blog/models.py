@@ -1,9 +1,9 @@
 from django.db import models
 from django.utils import timezone
-
+from django import forms
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    author = models.CharField(max_length=100)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
@@ -11,6 +11,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
     desc =  models.CharField(max_length = 500)
+    verified =  models.BooleanField()
 
 
     def publish(self):
@@ -19,3 +20,18 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class PostForm(forms.ModelForm):
+
+
+    class Meta:
+        model = Post
+        fields = ('author' , 'title'  , 'text' ,'created_date' ,'desc' ,)
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'text': forms.Textarea(attrs={'class': 'form-control'}),
+            'author': forms.TextInput(attrs={'class': 'form-control'}),
+            'created_date': forms.DateTimeInput(attrs={'class': 'form-control'}),
+            'desc': forms.TextInput(attrs={'class': 'form-control'}),
+        }
+

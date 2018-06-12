@@ -1,0 +1,11 @@
+{% extends 'blog_template.html' %}
+{% block content %}
+
+Hi .You can write on any topic you want .It will only be published after a review .You can submit more than one article. Also , if you are a fan of html then you can include it in your text i.e the text box shown below .In desc field give a short description about your topic .Make sure that your article is greater than 50 words .<br><br>
+<form  method="post">
+{% csrf_token %}
+    <b>{{form.as_ul}}</b><br>
+    <input type="submit" value="submit">
+</form>
+
+{% endblock content %}

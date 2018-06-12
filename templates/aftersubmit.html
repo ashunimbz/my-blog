@@ -1,0 +1,12 @@
+{% extends 'blog_template.html' %}
+
+
+
+{% block content %}
+
+<h1>Your article has been successfully received . It will be reviewed shortly .</h1>
+<br><br>
+
+<a href = "{% url  'blog:blog_url'   %}">   <h1>GO BACK TO POSTS</h1></a>
+
+{% endblock content %}
