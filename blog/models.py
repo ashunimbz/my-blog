@@ -27,11 +27,21 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('author' , 'title'  , 'text' ,'created_date' ,'desc' ,)
+        labels = {
+            'desc': "Description" ,
+        }
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'text': forms.Textarea(attrs={'class': 'form-control'}),
             'author': forms.TextInput(attrs={'class': 'form-control'}),
             'created_date': forms.DateTimeInput(attrs={'class': 'form-control'}),
             'desc': forms.TextInput(attrs={'class': 'form-control'}),
+        }
+        help_texts = {
+
+            'author':'Enter your name',
+            'desc' : 'Write a short description about your article',
+            'title': 'Topic of your article',
+            'text' :'Your article no more than 300 words',
         }
 
