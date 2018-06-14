@@ -1,6 +1,11 @@
 {% extends 'blog_template.html' %}
 
-{% block blogtitle %}{{post.title |safe}}{% endblock blogtitle%}
+{% block blogtitle %}{{post.title |safe}}
+<br><br>
+ <div class="fb-like" data-href="{{ request.build_absolute_uri  }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+<br><br>
+{% endblock blogtitle%}
 {% block content %}
  
     <div class="post-entry">
@@ -16,5 +21,7 @@
 
 <p > <b>Author</b>  -  {{ post.author|safe }} </p>
 <p> <b>Published date</b> - {{ post.created_date }} </p>
+<br><br>
+<div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div>
 
 {% endblock extras %}
