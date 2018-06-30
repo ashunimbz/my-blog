@@ -32,11 +32,23 @@ def api(request):
     if request.method == 'POST':
         form = SubmissionForm(request.POST)
         if form.is_valid():
+            var = 10
             text = form.cleaned_data['text']
+            lang= form.cleaned_data['language']
+            if lang == 'C':
+                var = str(4)
+            elif lang == "C++":
+                var = str(10)
+            elif lang == 'Python3':
+                var =str(34)
+            else:
+                var = str(27)
+
+
             response = requests.post('https://api.judge0.com/submissions?wait=true',
                                      {
                                          "source_code": text,
-                                         "language_id": '10'
+                                         "language_id": var
                                      }
 
                                      )
@@ -46,4 +58,4 @@ def api(request):
             return render(request , 'test.html' ,{'info':info,  'form' : form , 'isvalid':isvalid})
     else:
         form = SubmissionForm()
-        return render(request , 'test.html' ,{'form':form , 'isvalid':isvalid,})
+        return render(request , 'test.html' ,{'form':form , 'isvalid':isvalid})

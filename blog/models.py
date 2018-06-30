@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django import forms
 
+
 class Post(models.Model):
     author = models.CharField(max_length=100)
     title = models.CharField(max_length=200)
