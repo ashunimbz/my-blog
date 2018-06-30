@@ -45,3 +45,8 @@ class PostForm(forms.ModelForm):
             'text' :'Your article no more than 300 words',
         }
 
+class Submission(models.Model):
+    text  =  models.CharField(max_length=10000)
+
+    def __str__(self):
+        return self.text
