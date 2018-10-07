@@ -33,3 +33,38 @@
 1538919989461	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483658
 1538919989553	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://127.0.0.1:8000/blog/submit
 1538919989558	Marionette	INFO	Stopped listening on port 40503
+1538922188642	geckodriver	INFO	geckodriver 0.21.0
+1538922188646	geckodriver	INFO	Listening on 127.0.0.1:39495
+1538922189741	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yCpayvMRke2d"
+1538922193516	Marionette	INFO	Listening on port 37049
+1538922193563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538922193630	Marionette	DEBUG	[2147483649] Frame script loaded
+1538922193685	Marionette	DEBUG	[2147483649] Frame script registered
+1538922193757	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538922193782	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1538922200280	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://127.0.0.1:8000/
+1538922200321	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://127.0.0.1:8000/
+1538922200394	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://127.0.0.1:8000/
+1538922200409	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://127.0.0.1:8000/
+1538922200410	Marionette	DEBUG	[2147483649] Received DOM event unload for http://127.0.0.1:8000/
+1538922200496	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://127.0.0.1:8000/blog/
+1538922201652	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://127.0.0.1:8000/blog/
+1538922201886	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1538922201928	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://127.0.0.1:8000/blog/
+1538922201947	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://127.0.0.1:8000/blog/
+1538922201949	Marionette	DEBUG	[2147483649] Received DOM event unload for http://127.0.0.1:8000/blog/
+1538922202072	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://127.0.0.1:8000/blog/submit
+1538922202100	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483654
+1538922202254	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://127.0.0.1:8000/blog/submit
+1538922202496	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1538922202779	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1538922203010	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1538922203278	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1538922203574	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1538922203638	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://127.0.0.1:8000/blog/submit
+1538922203870	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://127.0.0.1:8000/blog/submit
+1538922203873	Marionette	DEBUG	[2147483649] Received DOM event unload for http://127.0.0.1:8000/blog/submit
+1538922203951	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://127.0.0.1:8000/blog/submit
+1538922203971	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483658
+1538922204059	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://127.0.0.1:8000/blog/submit
+1538922204066	Marionette	INFO	Stopped listening on port 37049
