@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <set>
+#include <map>
+#include <queue>
+#include <stack>
+#include <algorithm>
+#include <unordered_map>
+#include <unordered_set>
+#include <climits>
+#include <iomanip>
+#include <cstdio>
+#include<fstream>
+#define ll   long long int
+#define MOD 1000000007
+#define inf  20000000000000
+#define eps  0.0000000000001
+using namespace std ; 
+ll arr[20] ; 
+ll n  ; 
+
+
+bool posi(ll  i  , ll cur)
+{
+     if(cur ==   n )
+     {
+        if(i  == 0 )
+          return  true ;  
+        return false ;  
+     }
+
+
+bool a =  posi( (i + arr[cur])%360 ,cur + 1 )  ;
+bool b =  posi(  (i - arr[cur] + 360)%360  ,cur + 1   ) ;  
+bool c =  a | b  ;  
+return c ;   
+
+}
+
+
+int main()
+{
+  ios::sync_with_stdio(false);cin.tie(0) ;cout.tie(0) ;
+  cin>>n ;    
+  for(int i   = 0 ;  i <  n ; ++i)
+    cin>>arr[i] ;  
+ 
+   if(posi(0 ,  0))
+    cout<<"YES\n" ;
+    else
+    cout<<"NO\n" ;  
+
+  return 0 ;
+} 
