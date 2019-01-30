@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <set>
+#include <map>
+#include <queue>
+#include <algorithm>
+#include <unordered_map>
+#include <unordered_set>
+#include <climits>
+#include <iomanip>
+#include <cstdio>
+#define ll   long long int
+#define MOD 1000000007
+#define inf  20000000000000
+#define eps  0.0000000000001
+using namespace std ; 
+string s ;  
+
+
+int main()
+{
+   ios::sync_with_stdio(false);cin.tie(0) ;cout.tie(0) ;
+   ll v ;  cin>>v  ;
+   cin>>s ;
+   sort(s.begin()   ,s.end());
+   cout<<s ;   
+   return  0 ; 
+} 
