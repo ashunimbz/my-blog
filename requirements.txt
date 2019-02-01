@@ -3,13 +3,16 @@ certifi==2018.4.16
 chardet==3.0.4
 Django==1.11.11
 django-el-pagination==3.0.1
+django-filter==2.1.0
 django-markdown-deux==1.0.5
 django-pagedown==1.0.4
 django-simple-blog==0.2.1
 django-simple-math-captcha==1.0.7
+djangorestframework==3.9.1
 idna==2.7
 isort==4.3.4
 lazy-object-proxy==1.3.1
+Markdown==3.0.1
 markdown2==2.3.5
 mccabe==0.6.1
 pkg-resources==0.0.0
