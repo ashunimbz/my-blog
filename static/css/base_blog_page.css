@@ -1,8 +1,4 @@
-body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-}
+
  h2  {
     color: royalblue;
     text-decoration: none;
@@ -41,9 +37,18 @@ p.foot{
     background-color: #FF0000; 
     color: #fff
 }
+.bg-7{
+    background-color: #181818; 
+ 
+}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.container-fluid1 {
+    padding-top: 23px;
+    padding-bottom: 20px;
 }
 .navbar {
     padding-top: 15px;
@@ -56,4 +61,9 @@ p.foot{
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
+}
+body {
+  
+font-family: "Comic Sans MS", cursive, sans-serif;
+    line-height: 1.8;
 }
