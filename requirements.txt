@@ -1,7 +1,7 @@
 astroid==1.6.1
 certifi==2018.4.16
 chardet==3.0.4
-Django==1.11.11
+Django==1.11.23
 django-el-pagination==3.0.1
 django-filter==2.1.0
 django-markdown-deux==1.0.5
